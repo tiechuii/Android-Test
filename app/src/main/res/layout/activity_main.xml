@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#5CACEE">
+
+    <com.example.logintest.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.logintest.TitleLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="#F5F5DC"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/text_1"
+            android:background="#F5F5DC"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </EditText>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="#F5F5DC"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/text_2"
+            android:background="#F5F5DC"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="登录"
+            android:textSize="30sp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/shape">
+
+        </Button>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="注册"
+            android:textSize="30sp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
